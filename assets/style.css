@@ -1,8 +1,86 @@
 :root {
+    --gris1:#f3f3f3;
+    --gris2:#EAEAEA;
+    --gris3:#f7f7f7;
+    --gris4:#f6f6f6;
     --blanc:#ffff;
+    --background:#d2d2d2;
     --turquoise:#99e2d0;
     --vertFoncé:#008766;
     --bleuClair:#89C8FA;
     --bleuFoncé:#003A68;
     --violet:#9356DC;
+}
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    max-width: 375px;
+    Margin: auto;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7;
+}
+.flexCenterXY{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.alignText{
+text-align: center;
+}
+.textDecorationNone {
+    text-decoration: none;
+}
+
+/******HEADER*****/
+nav img{
+    width: 162px;
+    height: 44px;  
+}
+.navBox{
+    width: 100%;
+    height: 63px;
+    background-color: var(--blanc);
+    padding-top: 14px;   
+}
+.locationBox{
+    height: 50px;
+    background-color: var(--gris2);
+}
+.introBox{
+    min-height: 287.5px;
+    background-color: var(--gris3);
+    padding: 39.5px 0px 44px 0px;
+    gap: 27px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.introTextBox{
+    width: 76%;
+}
+.introTitleStyle{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+.restaurantsButtonBox{
+    width: 218px;
+    height: 50px;
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    border-radius: 25px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
