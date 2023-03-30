@@ -10,6 +10,7 @@
     --bleuClair:#89C8FA;
     --bleuFoncé:#003A68;
     --violet:#9356DC;
+    --gris5:#353535;
 }
 *,
 ::after,
@@ -58,7 +59,7 @@ text-align: center;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-    color: red;
+    color: var(--gris5);
     gap: 17px;
     z-index: -1;
 }
