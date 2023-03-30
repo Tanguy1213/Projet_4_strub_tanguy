@@ -3,7 +3,7 @@
     --gris2:#EAEAEA;
     --gris3:#f7f7f7;
     --gris4:#f6f6f6;
-    --gris5:#7e7e7e;
+    --gris5:#7E7E7E;
     --blanc:#ffff;
     --background:#d2d2d2;
     --turquoise:#99e2d0;
@@ -11,7 +11,7 @@
     --bleuClair:#89C8FA;
     --bleuFoncé:#003A68;
     --violet:#9356DC;
-    --gris5:#353535;
+    --gris6:#353535;
 }
 *,
 ::after,
@@ -66,7 +66,7 @@ text-align: center;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-    color: var(--gris5);
+    color: var(--gris6);
     gap: 17px;
     z-index: -1;
 }
@@ -125,26 +125,47 @@ text-align: center;
     flex-direction: column;
     justify-content: space-between;
 }
-.listStepCards{
-    display: flex;
+.listStyle{
+    height: 80%;
+    display:flex;
     flex-direction: column;
-    row-gap: 23px;
+    gap: 25px;
+    list-style: none;
+    counter-reset: my-counter;
+    padding-left: 0;
 }
-.stepCards{
+.listStyle li::before {
+    content: counter(my-counter);
+    counter-increment: my-counter;
+    background-color: var(--violet);
+    color: var(--blanc); 
+    width: 24px;
+    height: 24px;
     display: flex;
-    height: 72.38px;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    left:-12px;
+    transform: translateY(-50%);
+  }
+
+.listStyle li{
+    height:72.38px;
     background-color: var(--gris3);
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-    border-radius:20px;
-    align-items: center;
+    border-radius: 20px;
+    position: relative;
+    padding-left: 35px;
 }
-.stepCards p{
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    color: #000000;
+
+.listStyle li div{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 .iconGrey{
     color: var(--gris5);
