@@ -1,18 +1,19 @@
 :root {
-    --grey1:#f3f3f3;
-    --grey2:#EAEAEA;
-    --grey3:#f7f7f7;
-    --grey4:#f6f6f6;
-    --grey5:#7E7E7E;
-    --grey6:#353535;
-    --white:#ffff;
-    --background:#d2d2d2;
-    --turquoise:#99e2d0;
-    --darkGreen:#008766;
-    --lightBlue:#89C8FA;
-    --darkBlue:#003A68;
-    --purple:#9356DC; 
+    --grey1: #f3f3f3;
+    --grey2: #EAEAEA;
+    --grey3: #f7f7f7;
+    --grey4: #f6f6f6;
+    --grey5: #7E7E7E;
+    --grey6: #353535;
+    --white: #ffff;
+    --background: #d2d2d2;
+    --turquoise: #99e2d0;
+    --darkGreen: #008766;
+    --lightBlue: #89C8FA;
+    --darkBlue: #003A68;
+    --purple: #9356DC;
 }
+
 *,
 ::after,
 ::before {
@@ -20,45 +21,62 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     max-width: 425px;
     Margin: auto;
     font-family: 'Roboto', sans-serif;
     background-color: #f7f7f7;
 }
-h2{
+
+h2 {
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
 }
-.flexCenterXY{
+
+h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.flexCenterXY {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.alignText{
-text-align: center;
+
+.alignText {
+    text-align: center;
 }
+
 .textDecorationNone {
     text-decoration: none;
 }
 
+.listNoSytle {
+    list-style: none;
+}
 
 /******HEADER*****/
-#logo{
+#logo {
     width: 162px;
-    height: 44px;  
+    height: 44px;
 }
-.navBox{
+
+.navBox {
     width: 100%;
     height: 63px;
     background-color: var(--white);
-    padding-top: 14px; 
+    padding-top: 14px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
     z-index: 1;
 }
-.locationBox{
+
+.locationBox {
     position: relative;
     height: 50px;
     background-color: var(--grey2);
@@ -71,18 +89,18 @@ text-align: center;
     z-index: -1;
 }
 
-                                /*Intro*/
-.introBox{
+/*Intro*/
+.introBox {
     min-height: 287.5px;
     background-color: var(--grey3);
     padding: 39.5px 0px 44px 0px;
     gap: 27px;
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
 }
 
-.introTextBox p{
+.introTextBox p {
     margin: auto;
     width: 84%;
     font-style: normal;
@@ -90,15 +108,18 @@ text-align: center;
     font-size: 18px;
     line-height: 21px;
 }
-.introTextBox h2{
+
+.introTextBox h2 {
     margin: auto;
     width: 76%
 }
-                                /*Boutton Exploration*/
-.buttonStyle:hover{
+
+/*Boutton Exploration*/
+.buttonStyle:hover {
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
 }
-.buttonStyle{
+
+.buttonStyle {
     width: 218px;
     height: 50px;
     background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
@@ -106,7 +127,8 @@ text-align: center;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     transform: matrix(1, 0, 0, -1, 0, 0);
 }
-.buttonStyle p{
+
+.buttonStyle p {
     font-style: normal;
     font-size: 16px;
     font-weight: 500;
@@ -116,8 +138,8 @@ text-align: center;
 }
 
 /******MAIN*****/
-                                /*Fonctionnement list*/
-.fonctionnementBox{
+/*Fonctionnement list*/
+.fonctionnementBox {
     height: 440px;
     padding: 46px 20px 68px 20px;
     background-color: var(--white);
@@ -125,20 +147,20 @@ text-align: center;
     flex-direction: column;
     justify-content: space-between;
 }
-.listStyle{
+
+.listStyle {
     height: 80%;
-    display:flex;
+    display: flex;
     flex-direction: column;
     gap: 25px;
-    list-style: none;
     counter-reset: my-counter;
-    padding-left: 0;
 }
+
 .listStyle li::before {
     content: counter(my-counter);
     counter-increment: my-counter;
     background-color: var(--purple);
-    color: var(--white); 
+    color: var(--white);
     width: 24px;
     height: 24px;
     display: flex;
@@ -146,14 +168,11 @@ text-align: center;
     align-items: center;
     border-radius: 50%;
     position: absolute;
-    left: 0;
-    top: 50%;
-    left:-12px;
-    transform: translateY(-50%);
-  }
+    left: -12px;
+}
 
-.listStyle li{
-    height:72.38px;
+.listStyle li {
+    height: 72.38px;
     background-color: var(--grey3);
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
@@ -167,10 +186,88 @@ text-align: center;
     line-height: 19px;
 }
 
-.iconGrey{
+.iconGrey {
     color: var(--grey5);
 }
-.iconPurple{
+
+.iconPurple {
     color: var(--purple);
 }
 
+/*Restaurants*/
+.newLogo {
+    position: absolute;
+    right: 11px;
+    top: 11px;
+    width: 80px;
+    height: 29px;
+    background: var(--turquoise);
+    color: var(--darkGreen);
+    border-radius: 2px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.restaurantsBox {
+    width: 100%;
+    padding: 54px 14px 66px 14px;
+}
+
+.restaurantsBox ul {
+    list-style: none;
+}
+
+.restaurantsBox li {
+    margin-top: 18px;
+}
+
+.restaurantsCards {
+    position: relative;
+    width: 100%;
+    height: 251px;
+    background-color: var(--white);
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.imageSet {
+    width: 100%;
+    height: 70%;
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+    object-position: center bottom;
+    /*comment center vers le bas*/
+    display: block;
+}
+
+.imageCenteredCenter {
+    /*Juste pour la deuxieme image qui sur la maquette est centrée au centre contrairement aux autres*/
+    object-position: center;
+}
+
+.restaurantsTextBox {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    padding-left: 13px;
+    padding-right: 25px;
+}
+
+.restaurantsTextBoxTitle {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.restaurantsTextBoxTitle p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 20px;
+}
