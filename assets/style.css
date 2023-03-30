@@ -3,6 +3,7 @@
     --gris2:#EAEAEA;
     --gris3:#f7f7f7;
     --gris4:#f6f6f6;
+    --gris5:#7e7e7e;
     --blanc:#ffff;
     --background:#d2d2d2;
     --turquoise:#99e2d0;
@@ -24,6 +25,12 @@ body {
     Margin: auto;
     font-family: 'Roboto', sans-serif;
     background-color: #f7f7f7;
+}
+h2{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
 }
 .flexCenterXY{
     display: flex;
@@ -74,14 +81,18 @@ text-align: center;
     flex-direction: column;
     align-items:center;
 }
-.introTextBox{
-    width: 76%;
-}
-.introTitleStyle{
+
+.introTextBox p{
+    margin: auto;
+    width: 84%;
     font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+}
+.introTextBox h2{
+    margin: auto;
+    width: 76%
 }
                                 /*Boutton Exploration*/
 .buttonStyle:active{
@@ -95,7 +106,7 @@ text-align: center;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     transform: matrix(1, 0, 0, -1, 0, 0);
 }
-.buttonTextStyle{
+.buttonStyle p{
     font-style: normal;
     font-size: 16px;
     font-weight: 500;
@@ -103,3 +114,42 @@ text-align: center;
     color: var(--blanc);
     transform: matrix(1, 0, 0, -1, 0, 0);
 }
+
+/******MAIN*****/
+                                /*Fonctionnement list*/
+.fonctionnementBox{
+    height: 440px;
+    padding: 46px 20px 68px 20px;
+    background-color: var(--blanc);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.listStepCards{
+    display: flex;
+    flex-direction: column;
+    row-gap: 23px;
+}
+.stepCards{
+    display: flex;
+    height: 72.38px;
+    width: 100%;
+    background-color: var(--gris3);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius:20px;
+    align-items: center;
+}
+.stepCards p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+.iconGrey{
+    color: var(--gris5);
+}
+.iconPurple{
+    color: var(--violet);
+}
+
