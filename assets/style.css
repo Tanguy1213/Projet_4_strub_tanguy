@@ -95,7 +95,7 @@ text-align: center;
     width: 76%
 }
                                 /*Boutton Exploration*/
-.buttonStyle:active{
+.buttonStyle:hover{
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
 }
 .buttonStyle{
@@ -159,14 +159,14 @@ text-align: center;
     border-radius: 20px;
     position: relative;
     padding-left: 35px;
-}
-
-.listStyle li div{
-    height: 100%;
     display: flex;
     align-items: center;
     gap: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
 }
+
 .iconGrey{
     color: var(--gris5);
 }
