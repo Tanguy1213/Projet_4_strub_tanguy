@@ -1,17 +1,17 @@
 :root {
-    --gris1:#f3f3f3;
-    --gris2:#EAEAEA;
-    --gris3:#f7f7f7;
-    --gris4:#f6f6f6;
-    --gris5:#7E7E7E;
-    --blanc:#ffff;
+    --grey1:#f3f3f3;
+    --grey2:#EAEAEA;
+    --grey3:#f7f7f7;
+    --grey4:#f6f6f6;
+    --grey5:#7E7E7E;
+    --grey6:#353535;
+    --white:#ffff;
     --background:#d2d2d2;
     --turquoise:#99e2d0;
-    --vertFoncé:#008766;
-    --bleuClair:#89C8FA;
-    --bleuFoncé:#003A68;
-    --violet:#9356DC;
-    --gris6:#353535;
+    --darkGreen:#008766;
+    --lightBlue:#89C8FA;
+    --darkBlue:#003A68;
+    --purple:#9356DC; 
 }
 *,
 ::after,
@@ -53,7 +53,7 @@ text-align: center;
 .navBox{
     width: 100%;
     height: 63px;
-    background-color: var(--blanc);
+    background-color: var(--white);
     padding-top: 14px; 
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
     z-index: 1;
@@ -61,12 +61,12 @@ text-align: center;
 .locationBox{
     position: relative;
     height: 50px;
-    background-color: var(--gris2);
+    background-color: var(--grey2);
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-    color: var(--gris6);
+    color: var(--grey6);
     gap: 17px;
     z-index: -1;
 }
@@ -74,7 +74,7 @@ text-align: center;
                                 /*Intro*/
 .introBox{
     min-height: 287.5px;
-    background-color: var(--gris3);
+    background-color: var(--grey3);
     padding: 39.5px 0px 44px 0px;
     gap: 27px;
     display: flex;
@@ -111,7 +111,7 @@ text-align: center;
     font-size: 16px;
     font-weight: 500;
     line-height: 19px;
-    color: var(--blanc);
+    color: var(--white);
     transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
@@ -120,7 +120,7 @@ text-align: center;
 .fonctionnementBox{
     height: 440px;
     padding: 46px 20px 68px 20px;
-    background-color: var(--blanc);
+    background-color: var(--white);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -137,8 +137,8 @@ text-align: center;
 .listStyle li::before {
     content: counter(my-counter);
     counter-increment: my-counter;
-    background-color: var(--violet);
-    color: var(--blanc); 
+    background-color: var(--purple);
+    color: var(--white); 
     width: 24px;
     height: 24px;
     display: flex;
@@ -154,7 +154,7 @@ text-align: center;
 
 .listStyle li{
     height:72.38px;
-    background-color: var(--gris3);
+    background-color: var(--grey3);
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
     position: relative;
@@ -168,9 +168,9 @@ text-align: center;
 }
 
 .iconGrey{
-    color: var(--gris5);
+    color: var(--grey5);
 }
 .iconPurple{
-    color: var(--violet);
+    color: var(--purple);
 }
 
