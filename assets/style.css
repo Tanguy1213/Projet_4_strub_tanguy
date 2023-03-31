@@ -232,6 +232,9 @@ h3 {
     border-radius: 15px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
+.restaurantsCards:hover{
+ transform: scale(1.02);
+}
 
 .imageSet {
     width: 100%;
@@ -252,22 +255,25 @@ h3 {
     width: 100%;
     height: 30%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     color: black;
     padding-left: 13px;
     padding-right: 25px;
+    row-gap: 5px;
 }
-
-.restaurantsTextBoxTitle {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.restaurantsTextBoxTitle p {
+.restaurantsTextBox p {
     font-style: normal;
     font-weight: 300;
     font-size: 17px;
     line-height: 20px;
+}
+.likeIcon{
+    position: absolute;
+    right: 32px;
+    top: 204px;
+    cursor: pointer;
+}
+.likeIcon:hover{
+    transform: scale(1.1);
 }
