@@ -13,7 +13,9 @@
     --darkBlue: #003A68;
     --purple: #9356DC;
 }
-
+html {
+    scroll-behavior: smooth;
+  }
 *,
 ::after,
 ::before {
