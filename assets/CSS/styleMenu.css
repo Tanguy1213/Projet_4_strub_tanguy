@@ -86,32 +86,42 @@ h3 {
 /******MAIN*****/
 .menuBox{
     width: 100%;
-    height: 1282px;
 }
-.menu{
-    width: 100%;
+.menuTitleBox{
+    padding : 25px 41px 30px 17px;
+    border-radius: 40px 40px 0px 0px;
     background-color: var(--grey3);
     position: absolute;
+    width: 100%;
+    top: 286px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menuTitleBox h2{
+    font-family: 'Shrikhand';
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 41px;
+}
+
+.likeIconPos{
+    font-size: 20px;
+}
+.menu{
+    padding-top: 46px;
+    width: 100%;
+    background-color: var(--grey3);
     border-radius: 40px 40px 0px 0px;
-    top: 283px;
 }
 .imageMenuSet {
     width: 100%;
     height: 275px;
     object-fit: cover;
-    object-position: center top;
+    object-position: bottom;
     display: block;
 }
-.menu h2{
-    padding-top: 25px;
-    padding-left: 17px;
-    padding-bottom: 30px;
-    font-family: 'Shrikhand';
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 41px;
-    
-}
+
 .menu h3{
     font-style: normal;
     font-weight: 300;
