@@ -327,11 +327,11 @@ h3 {
     gap:7px;
 }
 
-/*@media screen and (min-width:500px){
+@media screen and (min-width:500px){
     .imageSet {
         object-position: center;
     }
-}*/
+}
 @media screen and (min-width:1024px){
     body{
         min-width: 1024px;
@@ -366,7 +366,6 @@ h3 {
     .fonctionnementBox {
         height: 228.38px;
         padding: 50px 207px 50px 180px;
-        
     }
     
     .listStyle {
@@ -377,6 +376,7 @@ h3 {
     
     .listStyle li {
         width: 322px;
+        padding-right: 10px;
     }
     
     .iconGrey {
@@ -385,5 +385,19 @@ h3 {
     
     .iconPurple {
         color: var(--purple);
+    }
+
+    /*Restaurants*/
+    .restaurantsBox {
+        padding: 54px 180px 66px 180px;
+    }
+    .restaurantsList li{
+        width: 46%;
+    }
+    .restaurantsList{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 30px;
     }
 }
