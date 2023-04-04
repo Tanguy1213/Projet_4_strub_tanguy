@@ -1,17 +1,15 @@
 :root {
-    --grey1: #f3f3f3;
-    --grey2: #EAEAEA;
-    --grey3: #f7f7f7;
-    --grey4: #f6f6f6;
-    --grey5: #7E7E7E;
-    --grey6: #353535;
-    --white: #ffff;
-    --background: #d2d2d2;
+    --grey1: #eaeaea;
+    --grey2: #7E7E7E;
+    --grey3: #353535;
+    --background: #F6F6F6;
+    --white: #FFFF;
     --turquoise: #99e2d0;
     --darkGreen: #008766;
     --lightBlue: #89C8FA;
     --darkBlue: #003A68;
     --purple: #9356DC;
+    --lightBlack:#101010;
 }
 html {
     scroll-behavior: smooth;
@@ -28,7 +26,7 @@ body {
     width: 100%;
     Margin: auto;
     font-family: 'Roboto', sans-serif;
-    background-color: var(--grey3);
+    background-color: var(--background);
 }
 
 h2 {
@@ -68,7 +66,6 @@ h3 {
     width: 162px;
     height: 44px;
 }
-
 .navBox {
     width: 100%;
     height: 63px;
@@ -80,7 +77,7 @@ h3 {
     position: absolute;
     top: 24px;
     left: 23px;
-    color: var(--grey6)
+    color: var(--grey3)
 }
 nav{
     position: fixed;
@@ -90,14 +87,15 @@ nav{
 header{
     height:63px;
 }
-/*Intro*/
+
 /******MAIN*****/
 
 .menuTitleBox{
    position: relative;
 }
 .menuTitle{
-    background-color: var(--grey3);
+    background-color: var(--background);
+    color: var(--lightBlack);
     position: absolute;
     bottom: -1px;
     width: 100%;
@@ -119,7 +117,7 @@ header{
 }
 .menu{
     width: 100%;
-    background-color: var(--grey3);
+    background-color: var(--background);
     padding-top:40px;
     gap: 40px;
     display: flex;
@@ -177,7 +175,7 @@ header{
     position: relative;
 }
 .tasteAndPrice b {
-    color:var(--grey6);
+    color:var(--grey3);
     position: absolute;
     right: 0px;
     bottom: 0px;
@@ -231,7 +229,7 @@ header{
 .footerBox{
     width: 100%;
     height: 186px;
-    background-color: var(--grey6);
+    background-color: var(--grey3);
     padding : 22px 0px 22px 25px;
     display: flex;
     flex-direction: column;
