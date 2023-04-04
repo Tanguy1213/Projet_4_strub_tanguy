@@ -82,6 +82,14 @@ h3 {
     left: 23px;
     color: var(--grey6)
 }
+nav{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+header{
+    height:63px;
+}
 /*Intro*/
 /******MAIN*****/
 
