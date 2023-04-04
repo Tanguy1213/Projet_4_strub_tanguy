@@ -60,14 +60,7 @@ h3 {
 .listNoSytle {
     list-style: none;
 }
-a:active {
-    -webkit-tap-highlight-color: transparent;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
+
 /******HEADER*****/
 .logo {
     width: 162px;
