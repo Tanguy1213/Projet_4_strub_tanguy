@@ -28,7 +28,7 @@ body {
     width: 100%;
     Margin: auto;
     font-family: 'Roboto', sans-serif;
-    background-color: #f7f7f7;
+    background-color: var(--grey3);
 }
 
 h2 {
@@ -239,7 +239,7 @@ header{
 }
 .footerBox h2, 
 .footerBox p{
-    color: white;
+    color: var(--white);
 }
 .footerBox h2{
     font-family: 'Shrikhand';   
@@ -255,7 +255,7 @@ header{
 .footerBox svg{
     width: 11px;
     height: 13px;
-    fill: white;
+    fill: var(--white);
 }
 .footerList{
     display :flex;

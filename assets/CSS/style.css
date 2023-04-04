@@ -1,12 +1,12 @@
 :root {
-    --grey1: #f3f3f3;
+    --grey1: #F3F3F3;
     --grey2: #EAEAEA;
-    --grey3: #f7f7f7;
-    --grey4: #f6f6f6;
+    --grey3: #F7F7F7;
+    --grey4: #F6F6F6;
     --grey5: #7E7E7E;
     --grey6: #353535;
     --white: #ffff;
-    --background: #d2d2d2;
+    --background: #D2D2D2;
     --turquoise: #99e2d0;
     --darkGreen: #008766;
     --lightBlue: #89C8FA;
@@ -28,7 +28,7 @@ body {
     width: 100%;
     Margin: auto;
     font-family: 'Roboto', sans-serif;
-    background-color: #f7f7f7;
+    background-color: var(--grey3);
 }
 
 h2 {
