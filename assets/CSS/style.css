@@ -373,14 +373,6 @@ h3 {
         padding-right: 10px;
     }
     
-    .iconGrey {
-        color: var(--grey5);
-    }
-    
-    .iconPurple {
-        color: var(--purple);
-    }
-
     /*Restaurants*/
     .restaurantsBox {
         padding: 54px 180px 66px 180px;
