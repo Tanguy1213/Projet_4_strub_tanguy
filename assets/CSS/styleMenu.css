@@ -60,7 +60,9 @@ h3 {
 .listNoSytle {
     list-style: none;
 }
-
+a:focus, a:active {
+    outline: none;
+}
 /******HEADER*****/
 .logo {
     width: 162px;
