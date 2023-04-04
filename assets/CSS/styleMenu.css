@@ -84,35 +84,39 @@ h3 {
 }
 /*Intro*/
 /******MAIN*****/
-.menuBox{
-    width: 100%;
-}
+
 .menuTitleBox{
-    padding : 25px 41px 30px 17px;
-    border-radius: 40px 40px 0px 0px;
+   position: relative;
+}
+.menuTitle{
     background-color: var(--grey3);
     position: absolute;
+    bottom: -1px;
     width: 100%;
-    top: 286px;
+    min-height: 55px;
+    border-radius: 40px 40px 0px 0px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    padding: 25px 41px 0px 17px;
 }
-.menuTitleBox h2{
+.menuTitle h2{
     font-family: 'Shrikhand';
     font-weight: 400;
     font-size: 28px;
     line-height: 41px;
 }
-
 .likeIconPos{
     font-size: 20px;
 }
 .menu{
-    padding-top: 46px;
     width: 100%;
     background-color: var(--grey3);
-    border-radius: 40px 40px 0px 0px;
+    padding-top:40px;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 .imageMenuSet {
     width: 100%;
@@ -120,6 +124,10 @@ h3 {
     object-fit: cover;
     object-position: bottom;
     display: block;
+}
+.imageCenteredCenter {
+    /*Juste pour la deuxieme image qui sur la maquette est centrée au centre contrairement aux autres*/
+    object-position: center;
 }
 
 .menu h3{
@@ -136,12 +144,6 @@ h3 {
     font-weight: 600;
     font-size: 18px;
     line-height: 21px;
-}
-
-.menuChoices{
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
 }
 .menuPart{
     padding-left: 13px;
@@ -164,15 +166,20 @@ h3 {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 .tasteAndPrice b {
     color:var(--grey6);
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
 }
 .tasteAndPrice p{
     font-style: normal;
     font-weight: 300;
     font-size: 15.0431px;
     line-height: 18px;
+    width: 88%;
 }
 
 .menuPart ul {
@@ -195,7 +202,7 @@ h3 {
 }
 
 .orderButtonStyle {
-    width: 218px;
+    width: 186px;
     height: 50px;
     background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
     border-radius: 25px;
