@@ -103,6 +103,7 @@ h3 {
     font-weight: 300;
     font-size: 18px;
     line-height: 21px;
+    color: var(--grey3);
 }
 
 .introTextBox h2 {
@@ -204,8 +205,7 @@ h3 {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 14px; 
 }
 
 .restaurantsBox {
