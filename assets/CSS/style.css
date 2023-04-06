@@ -297,7 +297,7 @@ h3 {
 }
 .footerBox h2, 
 .footerBox p{
-    color: white;
+    color: var(--white);
 }
 .footerBox h2{
     font-family: 'Shrikhand';   
