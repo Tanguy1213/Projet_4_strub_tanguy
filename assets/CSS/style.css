@@ -264,25 +264,22 @@ h3 {
     line-height: 20px;
 }
 
-.likeIconPos{
+.likeIcon{
     position: absolute;
     font-size: 20px;
     right: 36px;
     top: 204px;
 }
-
-.likeIconFull{
-    opacity: 0;
+.likeIcon:hover,
+.menuLikeIconPos:hover{
     cursor: pointer;
     background-image:linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     border: none;
-}
-.likeIconFull:hover{
-    opacity: 100;
-    transition: all 0.3s ease;
+    font-weight: bold;
+    transition: all 0.5s;
 }
 
 /******FOOTER*****/
