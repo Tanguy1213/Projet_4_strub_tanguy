@@ -73,7 +73,7 @@ h3 {
     height: 100%;
     animation: fadeOut 0.4s;
     animation-fill-mode: forwards;
-    animation-delay: 4s;
+    animation-delay: 3s;
 }
 .loader{
     display: block;
@@ -220,7 +220,6 @@ h3 {
 }
 
 .listStyle {
-
     display: flex;
     flex-direction: column;
     gap: 25px;
