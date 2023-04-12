@@ -17,7 +17,9 @@ nav{
 header{
     height:63px;
 }
-
+.dots{
+    overflow: hidden;
+}
 /******MAIN*****/
 .menuTitle{
     position: relative;
@@ -36,7 +38,7 @@ header{
     color: var(--lightBlack);
     padding: 25px 41px 0px 17px;
 }
-.menu i{
+.menuLikeIcon{
     font-size: 20px;
     position: absolute;
     top: 36px;
@@ -69,12 +71,17 @@ header{
     padding-bottom: 5px;
     border-bottom : 3px solid var(--turquoise);
     width: 40px;
+    
 }
 .menu h4{
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 21px;
+    max-width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 .menuPart{
     padding-left: 13px;
@@ -82,16 +89,22 @@ header{
 }
 .menuPart button{
     width: 100%;
-    height: 33%;
+    height: 69px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     text-align: left;
-    padding: 12px 15px 12px 15px;
+    padding: 12px 0px 12px 15px;
     border-radius: 15px;
     background-color: var(--white);
     box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
     border: none;
     cursor: pointer;
+    overflow: hidden;
+}
+.textContainer{
+    width: 100%;
 }
 .tasteAndPrice{
     width: 100%;
@@ -110,7 +123,12 @@ header{
     font-weight: 300;
     font-size: 15.0431px;
     line-height: 18px;
-    width: 88%;
+    max-width: 100%;
+    width: fit-content;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-right: 25px;
 }
 
 .menuPart ul {
@@ -119,6 +137,35 @@ header{
     flex-direction: column;
     gap:12px;
 }
+.menuPart li{
+    display: flex;
+}
+/*Checkbox*/
+.checkBox{
+    width: 65px;
+    height: 69px;
+    background-color: var(--turquoise);
+    border-radius: 0px 15px 15px 0px;
+    margin-right: -65px;
+    margin-left: 15px;
+    transition: all 0.3s; 
+}
+.checkIcon{
+    border-radius: 50%;
+    background-color: var(--white);
+    color:var(--turquoise);
+}
+.checkIcon::before{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menuPart button:hover .checkBox{
+  margin-right: 0px;
+}
+
 
 /*Boutton de Commande*/
 .orderButtonBox{
@@ -174,7 +221,7 @@ header{
         padding-left: 0;
         padding-right: 0;
     }
-    .menu i {
+    .menuLikeIconPos{
         top:60px;
         right:345px;
     }
@@ -182,4 +229,5 @@ header{
         width: 60%;
         padding: 0px;
     }
+    
 }
