@@ -139,7 +139,10 @@ header{
 }
 .menuPart li{
     display: flex;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards, moveUp 1s ease-out forwards;
 }
+
 /*Checkbox*/
 .checkBox{
     width: 65px;
@@ -165,8 +168,41 @@ header{
 .menuPart button:hover .checkBox{
   margin-right: 0px;
 }
+/*Animation des menus*/
+.menuPart li:nth-child(1) {
+    animation-delay: 0.2s;
+}
 
+.menuPart li:nth-child(2) {
+    animation-delay: 0.5s;
+}
 
+.menuPart li:nth-child(3) {
+    animation-delay: 0.7s;
+}
+.menuPart li:nth-child(4) {
+    animation-delay: 0.9s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes moveUp {
+    from {
+        transform: translateY(45px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
 /*Boutton de Commande*/
 .orderButtonBox{
     width: 100%;
