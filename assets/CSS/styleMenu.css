@@ -5,21 +5,17 @@
     left: 23px;
     color: var(--grey3)
 }
-
 .navBox a:hover {
     transform: scale(1.2);
 }
-
 nav {
     position: fixed;
     width: 100%;
     z-index: 1;
 }
-
 header {
     height: 63px;
 }
-
 .dots {
     overflow: hidden;
 }
@@ -33,7 +29,6 @@ header {
     align-items: center;
 
 }
-
 .menu h2 {
     font-family: 'Shrikhand';
     font-weight: 400;
@@ -43,14 +38,13 @@ header {
     color: var(--lightBlack);
     padding: 25px 41px 0px 17px;
 }
-
 .menuLikeIcon {
     font-size: 20px;
     position: absolute;
     top: 36px;
     right: 41px;
 }
-
+/******MENU*****/
 .menu {
     position: relative;
     width: 100%;
@@ -62,14 +56,12 @@ header {
     gap: 40px;
     top: -40px;
 }
-
 .imageMenuSet {
     width: 100%;
     height: 275px;
     object-fit: cover;
     display: block;
 }
-
 .menu h3 {
     font-style: normal;
     font-weight: 300;
@@ -78,9 +70,7 @@ header {
     padding-bottom: 5px;
     border-bottom: 3px solid var(--turquoise);
     width: 40px;
-
 }
-
 .menu h4 {
     font-style: normal;
     font-weight: 600;
@@ -91,12 +81,10 @@ header {
     text-overflow: ellipsis;
     overflow: hidden;
 }
-
 .menuPart {
     padding-left: 13px;
     padding-right: 13px;
 }
-
 .menuPart button {
     width: 100%;
     height: 69px;
@@ -108,30 +96,27 @@ header {
     padding: 12px 0px 12px 15px;
     border-radius: 15px;
     background-color: var(--white);
-    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4.01149px 15.0431px 
+    rgba(0, 0, 0, 0.1);
     border: none;
     cursor: pointer;
     overflow: hidden;
 }
-
 .textContainer {
     width: 100%;
 }
-
 .tasteAndPrice {
     width: 100%;
     display: flex;
     justify-content: space-between;
     position: relative;
 }
-
 .tasteAndPrice b {
     color: var(--grey3);
     position: absolute;
     right: 0px;
     bottom: 0px;
 }
-
 .tasteAndPrice p {
     font-style: normal;
     font-weight: 300;
@@ -144,21 +129,20 @@ header {
     overflow: hidden;
     padding-right: 25px;
 }
-
 .menuPart ul {
     padding-top: 12px;
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
-
 .menuPart li {
     display: flex;
     opacity: 0;
-    animation: fadeIn 1s ease-out forwards, moveUp 1s ease-out forwards;
+    animation: fadeIn 1s ease-out forwards, 
+    moveUp 1s ease-out forwards;
 }
 
-/*Checkbox*/
+/*MENU CHECKMARK*/
 .checkBox {
     width: 65px;
     height: 69px;
@@ -168,13 +152,11 @@ header {
     margin-left: 15px;
     transition: all 0.3s;
 }
-
 .checkIcon {
     border-radius: 50%;
     background-color: var(--white);
     color: var(--turquoise);
 }
-
 .checkIcon::before {
     width: 20px;
     height: 20px;
@@ -182,7 +164,6 @@ header {
     justify-content: center;
     align-items: center;
 }
-
 .menuPart button:hover .checkBox,
 .menuPart button:focus .checkBox {
     margin-right: 0px;
@@ -192,24 +173,19 @@ header {
 .menuPart li:nth-child(1) {
     animation-delay: 0.2s;
 }
-
 .menuPart li:nth-child(2) {
     animation-delay: 0.5s;
 }
-
 .menuPart li:nth-child(3) {
     animation-delay: 0.7s;
 }
-
 .menuPart li:nth-child(4) {
     animation-delay: 0.9s;
 }
-
 @keyframes fadeIn {
     from {
         opacity: 0;
     }
-
     to {
         opacity: 1;
     }
@@ -219,7 +195,6 @@ header {
     from {
         transform: translateY(45px);
     }
-
     to {
         transform: translateY(0);
     }
@@ -233,12 +208,10 @@ header {
     justify-content: center;
     align-items: center;
 }
-
 .orderButtonStyle:hover {
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
     box-shadow: 0px -4px 15px rgba(0, 0, 0, 0.35);
 }
-
 .orderButtonStyle {
     width: 186px;
     height: 50px;
@@ -247,7 +220,6 @@ header {
     box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.25);
     transform: matrix(1, 0, 0, -1, 0, 0);
 }
-
 .orderButtonStyle p {
     font-style: normal;
     font-size: 16px;
@@ -256,44 +228,36 @@ header {
     color: var(--white);
     transform: matrix(1, 0, 0, -1, 0, 0);
 }
-
 @media screen and (min-width:1024px) {
 
     /******HEADER****/
     .navBox a {
         top: 40px;
     }
-
     /******MAIN****/
     main {
         background-color: var(--white);
     }
-
     .menuFullBox {
         width: 1024px;
         background-color: var(--background);
         margin: auto;
     }
-
     .menu {
         padding-top: 25px;
         align-items: center;
     }
-
     .menu h2 {
         width: fit-content;
         padding-left: 0;
         padding-right: 0;
     }
-
     .menuLikeIconPos {
         top: 60px;
         right: 345px;
     }
-
     .menu article {
         width: 60%;
         padding: 0px;
     }
-
 }
